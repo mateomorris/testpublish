@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-svelte="svelte-f8n4r8">
+    <meta charset="UTF-8" data-svelte="svelte-f8n4r8">
+    <style data-svelte="svelte-f8n4r8">
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        html {
+
+            /* Colors */
+            --color-accent: #154BF4;
+
+            /* Default property values */
+            --background: white;
+            --color: #222;
+            --padding: 2rem;
+            --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 8px;
+            --max-width: 1200px;
+            --border-color: #CBCACE;
+            --transition-time: 0.1s;
+            --transition: var(--transition-time) color,
+                var(--transition-time) background-color,
+                var(--transition-time) border-color,
+                var(--transition-time) text-decoration-color,
+                var(--transition-time) box-shadow, var(--transtion-time) transform;
+        }
+
+        .primo-page {
+            font-family: system-ui, sans-serif;
+            color: #222;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: white;
+            background: var(--background);
+        }
+
+        .primo-section .primo-content {
+            max-width: 1200px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem;
+            padding: var(--padding);
+        }
+
+        .primo-section .primo-content img {
+            width: 40%;
+            margin: 2rem 0;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--box-shadow);
+            border-radius: 8px;
+            border-radius: var(--border-radius);
+        }
+
+        .primo-section .primo-content p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+        }
+
+        .primo-section .primo-content a {
+            text-decoration: underline;
+        }
+
+        .primo-section .primo-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .primo-section .primo-content h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .primo-section .primo-content h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .primo-section .primo-content ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .primo-section .primo-content ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .primo-section .primo-content blockquote {
+            padding: 2rem;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--box-shadow);
+            border-radius: 8px;
+            border-radius: var(--border-radius);
+        }
+
+        .section-container {
+            max-width: 1200px;
+            max-width: var(--max-width, 1200px);
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            padding: 4rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 2.25rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: white;
+            background: #154BF4;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: 0.1s color,
+                0.1s background-color,
+                0.1s border-color,
+                0.1s box-shadow, var(--transtion-time) transform,
+                0.1s -webkit-text-decoration-color;
+            transition: 0.1s color,
+                0.1s background-color,
+                0.1s border-color,
+                0.1s text-decoration-color,
+                0.1s box-shadow, var(--transtion-time) transform;
+            transition: 0.1s color,
+                0.1s background-color,
+                0.1s border-color,
+                0.1s text-decoration-color,
+                0.1s box-shadow, var(--transtion-time) transform,
+                0.1s -webkit-text-decoration-color;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: #154BF4;
+            color: var(--color-accent);
+            border: 2px solid #154BF4;
+            border: 2px solid var(--color-accent);
+        }
+    </style>
+</head>
+
+<body class="primo-page">
+
+
+    <div class="primo-section has-content" id="tgocd">
+        <div class="primo-content">
+            <h1>Docs</h1>
+            <h3>Getting Started</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a pellentesque mi, a maximus elit. Donec sit amet tortor et orci gravida facilisis quis id justo. Fusce eget risus eget lacus efficitur consectetur id a justo. Integer augue lorem, tristique eget nulla sit amet, vestibulum consectetur magna. Nulla quis felis ut ligula tempus commodo. Maecenas lobortis euismod enim quis tristique. Nulla egestas eu sapien non vehicula. Integer pretium quam eget ligula tristique ultrices. Sed luctus metus massa, quis imperdiet risus lobortis a. Nunc vitae volutpat dui. Nulla dapibus quam et tortor laoreet, ac mattis est congue. Fusce quis lacus aliquam, viverra nisl vitae, efficitur neque.</p>
+            <p>Maecenas porta et ante egestas consectetur. Quisque porta tempus metus, eu elementum odio dignissim in. Donec quis nulla tristique, rhoncus dui malesuada, placerat augue. Praesent tempus pellentesque eros sed finibus. Phasellus dictum sollicitudin congue. Maecenas vitae leo dignissim, tempus nisi sit amet, accumsan elit. Maecenas et erat neque. In gravida iaculis rhoncus.</p>
+            <p>Maecenas porta et ante egestas consectetur. Quisque porta tempus metus, eu elementum odio dignissim in. Donec quis nulla tristique, rhoncus dui malesuada, placerat augue. Praesent tempus pellentesque eros sed finibus. Phasellus dictum sollicitudin congue. Maecenas vitae leo dignissim, tempus nisi sit amet, accumsan elit. Maecenas et erat neque. In gravida iaculis rhoncus.</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

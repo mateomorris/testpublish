@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-svelte="svelte-f8n4r8">
+    <meta charset="UTF-8" data-svelte="svelte-f8n4r8">
+    <style data-svelte="svelte-f8n4r8">
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        html {
+
+            /* Colors */
+            --color-accent: #154BF4;
+
+            /* Default property values */
+            --background: white;
+            --color: #222;
+            --padding: 2rem;
+            --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 8px;
+            --max-width: 1200px;
+            --border-color: #CBCACE;
+            --transition-time: 0.1s;
+            --transition: var(--transition-time) color,
+                var(--transition-time) background-color,
+                var(--transition-time) border-color,
+                var(--transition-time) text-decoration-color,
+                var(--transition-time) box-shadow, var(--transtion-time) transform;
+        }
+
+        .primo-page {
+            font-family: system-ui, sans-serif;
+            color: #222;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: white;
+            background: var(--background);
+        }
+
+        .primo-section .primo-content {
+            max-width: 1200px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem;
+            padding: var(--padding);
+        }
+
+        .primo-section .primo-content img {
+            width: 40%;
+            margin: 2rem 0;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--box-shadow);
+            border-radius: 8px;
+            border-radius: var(--border-radius);
+        }
+
+        .primo-section .primo-content p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+        }
+
+        .primo-section .primo-content a {
+            text-decoration: underline;
+        }
+
+        .primo-section .primo-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .primo-section .primo-content h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .primo-section .primo-content h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .primo-section .primo-content ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .primo-section .primo-content ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .primo-section .primo-content blockquote {
+            padding: 2rem;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--box-shadow);
+            border-radius: 8px;
+            border-radius: var(--border-radius);
+        }
+
+        .section-container {
+            max-width: 1200px;
+            max-width: var(--max-width, 1200px);
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            padding: 4rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 2.25rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: white;
+            background: #154BF4;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: 0.1s color,
+                0.1s background-color,
+                0.1s border-color,
+                0.1s box-shadow, var(--transtion-time) transform,
+                0.1s -webkit-text-decoration-color;
+            transition: 0.1s color,
+                0.1s background-color,
+                0.1s border-color,
+                0.1s text-decoration-color,
+                0.1s box-shadow, var(--transtion-time) transform;
+            transition: 0.1s color,
+                0.1s background-color,
+                0.1s border-color,
+                0.1s text-decoration-color,
+                0.1s box-shadow, var(--transtion-time) transform,
+                0.1s -webkit-text-decoration-color;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: #154BF4;
+            color: var(--color-accent);
+            border: 2px solid #154BF4;
+            border: 2px solid var(--color-accent);
+        }
+    </style>
+</head>
+
+<body class="primo-page">
+
+    <style>
+        .section-container.svelte-z6za4r.svelte-z6za4r {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        @media(min-width: 600px) {
+            .section-container.svelte-z6za4r.svelte-z6za4r {
+                flex-direction: row
+            }
+        }
+
+        nav.svelte-z6za4r.svelte-z6za4r {
+            display: flex;
+            gap: 1rem
+        }
+
+        nav.svelte-z6za4r .link.svelte-z6za4r {
+            border-color: transparent
+        }
+
+        nav.svelte-z6za4r .link.svelte-z6za4r:hover {
+            border-color: currentColor;
+            border-color: initial
+        }
+
+        .primo.svelte-z6za4r.svelte-z6za4r {
+            font-weight: 600;
+            font-size: 0.75rem
+        }
+
+        .primo.svelte-z6za4r a.svelte-z6za4r {
+            text-decoration: underline;
+            color: rgb(53, 217, 148)
+        }
+
+        .social-links.svelte-z6za4r.svelte-z6za4r {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.5rem
+        }
+
+        .social-links.svelte-z6za4r a.svelte-z6za4r {
+            color: rebeccapurple;
+            color: var(--color-accent, rebeccapurple);
+            transition: 0.1s transform;
+            transition: var(--transition, 0.1s transform)
+        }
+
+        .social-links.svelte-z6za4r a.svelte-z6za4r:hover {
+            transform: scale(1.1)
+        }
+    </style>
+    <div class="primo-section has-component" id="hhxjt">
+        <div class="primo-component">
+            <footer class="section-container svelte-z6za4r">
+                <nav class="svelte-z6za4r"><a class="link svelte-z6za4r" href="/">incididunt</a><a class="link svelte-z6za4r" href="/">ipsum</a></nav>
+                <span class="primo svelte-z6za4r"><a href="https://primo.so" class="svelte-z6za4r">Primo</a> Powered </span>
+                <div class="social-links svelte-z6za4r"><a href="/" aria-label="ipsum" class="svelte-z6za4r"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi">
+                            <!-- HTML_TAG_START -->
+                            <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" /><!-- HTML_TAG_END -->
+                        </svg>
+                    </a><a href="/" aria-label="labore" class="svelte-z6za4r"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi">
+                            <!-- HTML_TAG_START -->
+                            <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" /><!-- HTML_TAG_END -->
+                        </svg>
+                    </a></div>
+            </footer>
+        </div>
+    </div>
+    <script type="module" async>
+        const [{
+            default: App
+        }, data] = await Promise.all([
+            import('/_modules/mgwsz.js'),
+            fetch('/en.json').then(res => res.json()).catch(() => {})
+        ])
+        new App({
+            target: document.querySelector('#hhxjt'),
+            hydrate: true,
+            props: {
+                ...data,
+                ...data['pricing'],
+                ...data['pricing']['hhxjt']
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
